@@ -2,6 +2,8 @@
 
 Run *svm.pl* in *src*
 
+See section **Symlah VM Protocol (SVMP)** in [docs](docs/symlah_syntax.pdf) to find out how to run program within *svm.pl* daemon.
+
 ## The name Symlah
 
 The name arises from the combination of the word 'symbol' and the famous Malaysian colloquial 'lah.' The purpose of Symlah is to eliminate the need for specializing in development or analysis/design and generating a philosophy of cognitive software development through an ergonomic development interface.
