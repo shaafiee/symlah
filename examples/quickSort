@@ -1,0 +1,38 @@
+			<output numbersSorted>
+			<unique topHalf bottomHalf>
+			<discard tempBottomHalf>
+			<discard tempTopHalf>
+			<assign tempBottomHalf[1] numbers[1]>
+			<discard numbers[1]>
+			<foreach number numbers 'allotHalves'>
+tempTopValues		<count tempTopHalf>
+tempLessThanOne		<less tempTopValues '1'>
+			<callif tempLessThanOne 'popFromBottomHalf'>
+			<discard topHalf>
+			<discard bottomHalf>
+			<assign topHalf tempTopHalf>
+			<assign bottomHalf tempBottomHalf>
+totalTopValues		<count topHalf>
+greaterThanOne		<greater totalTopValues '1'>
+			<callif greaterThanOne 'iterateTopHalf' 'assignTopToSorted'>
+			<discard topHalf>
+totalBottomValues	<count bottomHalf>
+greaterThanOne		<greater totalBottomValues '1'>
+			<callif greaterThanOne 'iterateBottomHalf' 'assignBottomToSorted'>
+			<discard bottomHalf>
+			<exit>
+iterateTopHalf		<discard numbers>
+			<assign numbers topHalf>
+			<linkif '1' 'quickSort'>
+			<return>
+iterateBottomHalf	<discard numbers>
+			<assign numbers bottomHalf>
+			<linkif '1' 'quickSort'>
+			<return>
+assignTopToSorted	<assign numbersSorted topHalf>
+			<return>
+assignBottomToSorted	<assign numbersSorted bottomHalf>
+			<return>
+popFromBottomHalf	<assign tempTopHalf tempBottomHalf[1]>
+			<discard tempBottomHalf[1]>
+			<return>

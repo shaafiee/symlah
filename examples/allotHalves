@@ -1,0 +1,8 @@
+isLess		<less number tempBottomHalf[1]>
+		<callif isLess 'assignTop' 'assignBottom'>
+		<exit '1'>
+assignTop	<assign tempTopHalf number>
+		<return>
+assignBottom	<assign tempBottomHalf number>
+		<return>
+
