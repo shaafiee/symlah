@@ -1,3 +1,7 @@
+## To use it:
+
+Run *svm.pl* in *src*
+
 ## The name Symlah
 
 The name arises from the combination of the word 'symbol' and the famous Malaysian colloquial 'lah.' The purpose of Symlah is to eliminate the need for specializing in development or analysis/design and generating a philosophy of cognitive software development through an ergonomic development interface.
