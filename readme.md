@@ -2,7 +2,7 @@
 
 Run *svm.pl* in *src*
 
-See section **Symlah VM Protocol (SVMP)** in [docs](docs/symlah_syntax.pdf) to find out how to run program within *svm.pl* daemon.
+See section **Symlah VM Protocol (SVMP)** in [docs](docs/symlah_syntax.pdf) to find out how to run programs within *svm.pl* daemon.
 
 ## The name Symlah
 
